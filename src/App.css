@@ -1,5 +1,68 @@
-.App {
+.myApp {
+  background-color: #060421;
   text-align: center;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  margin: -5px;
+}
+
+img.myImage {
+  width: 100%;
+  position: relative;
+  left: 5px;
+}
+
+section.Top {
+  background-color: #040216;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 35px;
+  font-size: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+section.Mid {
+  border-top: solid 1px #3a3a4d;
+  background-color: #060421;
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 500px;
+}
+
+section.Bottom {
+  background-color: #060421;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h1.myHeader {
+  text-align: center;
+  font-size: 40px;
+}
+
+p.myParagraph {
+  text-indent: 3%;
+}
+
+div.myDiv {
+  margin: 5%;
+  padding: 2%;
+  border-radius: 25px;
+  border: solid 1px #3a3a4d;
+  background-color: #02001d;
+  text-align: left;
+  font-size: 20px;
 }
 
 .App-logo {
@@ -7,32 +70,214 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: 5px;
+  padding-right: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+img.HomePage {
+  position: relative;
+  left: 5px;
+  padding: 5px;
+  border: solid 1px #3a3a4d;
+  border-radius: 5px;
+  height: 20px;
+  margin: 1px;
+}
+
+img.HomePage:hover {
+  background-color: #3a3a4d;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img.Email {
+  height: 22px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  top: 4px;
+  left: 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img.Flag {
+  height: 22px;
+  position: relative;
+  top: 4px;
+}
+
+img.FlagSelection {
+  height: 22px;
+  position: relative;
+  top: 4px;
+  left: 5px;
+}
+
+div.fakeBorder {
+  z-index: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+  height: 34px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+div.fakeBorder:before {
+  content: '';
+  z-index: 0;
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(102, 102, 102, 0.75) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 75px;
+  transform-origin: top center;
+  animation: myFakeBorderSpin infinite 10s linear;
+}
+
+div.fakeBorder2 {
+  z-index: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+  height: 34px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+div.fakeBorder2:before {
+  content: '';
+  z-index: 0;
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(102, 102, 102, 0.75) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 75px;
+  transform-origin: top center;
+  animation: myFakeBorderSpin infinite 10s linear;
+  animation-delay: 5s;
+}
+
+@keyframes myFakeBorderSpin {
+  100% {transform: rotate(360deg);}
+}
+
+div.myMenuCell {
+  z-index: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid 1px #3a3a4d;
+  border-radius: 5px;
+  width: fit-content;
+  height: 30px;
+  position: relative;
+  margin: 2px;
+  display: inline-block;
+  background-color: #02001d;
+}
+
+div.myMenuCell:hover {
+  background-color: #3a3a4d;
+  color: white;
+}
+
+div.languageMenu {
+  z-index: 1;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid 1px #3a3a4d;
+  border-radius: 5px;
+  height: 30px;
+  width: 22px;
+  position: relative;
+  margin: 2px;
+  background-color: #02001d;
+}
+
+div.languageMenu:hover {
+  background-color: #3a3a4d;
+  color: white;
+}
+
+div.languageFakeBorder {
+  z-index: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+  position: relative;
+  left: calc(100% - 50px);
+  top: -35px;
+  align-items: center;
+  display: inline-block;
+  background-color: transparent;
+}
+
+div.languageFakeBorder:before {
+  content: '';
+  z-index: 0;
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(102, 102, 102, 0.75) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 75px;
+  transform-origin: top center;
+  animation: myFakeBorderSpin infinite 10s linear;
+}
+
+.languageDropdownAnhor {
+  z-index: 1;
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  left: calc(100% - 48px);
+  top: 4px;
+}
+
+.languageDropdownAnhor:hover {
+  background-color: #3a3a4d48;
+}
+
+.languageDropdownContent {
+  z-index: 1;
+  display: none;
+  position: relative;
+  top: 30px;
+}
+
+.languageDropdownAnhor:hover .languageDropdownContent {
+  display: block;
+  animation: 1s language ease-in-out;
+  z-index: 1;
+}
+
+@keyframes language {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
