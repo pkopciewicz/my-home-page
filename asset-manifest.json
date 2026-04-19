@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/my-home-page/static/css/main.f855e6bc.css",
-    "main.js": "/my-home-page/static/js/main.2780860e.js",
+    "main.css": "/my-home-page/static/css/main.0fb1deb5.css",
+    "main.js": "/my-home-page/static/js/main.781f3584.js",
     "static/js/453.6582195b.chunk.js": "/my-home-page/static/js/453.6582195b.chunk.js",
-    "static/media/logo.svg": "/my-home-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/Banner.gif": "/my-home-page/static/media/Banner.c8775742f9c02655c6dd.gif",
+    "static/media/Flag_GB.svg": "/my-home-page/static/media/Flag_GB.b23e66cbb528967a3352ee7b6a7387ab.svg",
+    "static/media/Email.svg": "/my-home-page/static/media/Email.4d705325928f8560077f052a5f7d5c1a.svg",
     "index.html": "/my-home-page/index.html",
-    "main.f855e6bc.css.map": "/my-home-page/static/css/main.f855e6bc.css.map",
-    "main.2780860e.js.map": "/my-home-page/static/js/main.2780860e.js.map",
+    "static/media/Flag_PL.svg": "/my-home-page/static/media/Flag_PL.2ea0a8455f6d5800504529086103a49c.svg",
+    "static/media/HomePage.svg": "/my-home-page/static/media/HomePage.a6b7879f50fb0d53a00bc55c2b4cd2e4.svg",
+    "main.0fb1deb5.css.map": "/my-home-page/static/css/main.0fb1deb5.css.map",
+    "main.781f3584.js.map": "/my-home-page/static/js/main.781f3584.js.map",
     "453.6582195b.chunk.js.map": "/my-home-page/static/js/453.6582195b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.2780860e.js"
+    "static/css/main.0fb1deb5.css",
+    "static/js/main.781f3584.js"
   ]
 }
